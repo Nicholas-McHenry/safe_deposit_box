@@ -1,5 +1,6 @@
 import React from "react";
-import "./App.css";
+import { connect } from "react-redux";
+import "./App.scss";
 import Numpad from "./components/Numpad";
 import Screen from "./components/Screen";
 
@@ -11,6 +12,7 @@ class App extends React.Component {
           <div className="sdb-body">
             <Screen />
             <Numpad />
+            <div className="sn">S/N: {this.props.serialNumber}</div>
           </div>
         </div>
       </div>
@@ -18,4 +20,10 @@ class App extends React.Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    serialNumber: state.serialNumber
+  };
+};
+
+export default connect(mapStateToProps)(App);

@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
 import { appActions } from "../constants/generalConstants";
 
-const serialNumberReducer = () => {
-  return "4815162342";
+const serialNumberReducer = (serialNumber = null, action) => {
+  return serialNumber;
 };
 
 const statusReducer = (status = null, action) => {
@@ -12,8 +12,11 @@ const statusReducer = (status = null, action) => {
   return status;
 };
 
-const passcodeReducer = () => {
-  return "6177";
+const passcodeReducer = (passcode = null, action) => {
+  if (action.type === appActions.CREATE_PASSCODE) {
+    return action.payload;
+  }
+  return passcode;
 };
 
 const inputPasscodeReducer = (inputtedPasscode = null, action) => {

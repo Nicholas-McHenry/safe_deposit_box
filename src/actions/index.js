@@ -1,4 +1,4 @@
-import { appActions } from "../constants/generalConstants";
+import { appActions, sagaActions } from "../constants/generalConstants";
 
 export const inputPasscode = passcode => {
   return {
@@ -18,5 +18,20 @@ export const changeMessage = message => {
   return {
     type: appActions.CHANGE_MESSAGE,
     payload: message
+  };
+};
+
+export const createPasscode = passcode => {
+  return {
+    type: appActions.CREATE_PASSCODE,
+    payload: passcode
+  };
+};
+
+export const validateSerialNumber = (passcode, serialNumber) => {
+  return {
+    type: sagaActions.VALIDATE_SN,
+    payload: passcode,
+    serialNumber
   };
 };
