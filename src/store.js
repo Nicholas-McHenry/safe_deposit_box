@@ -10,7 +10,8 @@ const initialStore = {
   message: statusMessages.READY,
   serialNumber: "4815162342",
   passcode: null,
-  inputPasscode: null
+  inputPasscode: null,
+  buttonActivity: null
 };
 
 /* Create saga middleware */

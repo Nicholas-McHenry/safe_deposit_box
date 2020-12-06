@@ -11,7 +11,8 @@ import {
   changeStatus,
   changeMessage,
   createPasscode,
-  validateSerialNumber
+  validateSerialNumber,
+  buttonActivity
 } from "../actions";
 
 class Numpad extends React.Component {
@@ -32,6 +33,10 @@ class Numpad extends React.Component {
     const { inputTimeout } = this.state;
     const { dispatch, status, message } = this.props;
 
+    let today = new Date();
+    let time =
+      today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    dispatch(buttonActivity(time));
     if (status === statusValues.LOCKED) {
       if (message === statusMessages.SERVICE) {
         dispatch(inputPasscode(value));

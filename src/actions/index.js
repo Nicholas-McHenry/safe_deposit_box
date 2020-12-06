@@ -35,3 +35,10 @@ export const validateSerialNumber = (passcode, serialNumber) => {
     serialNumber
   };
 };
+
+export const buttonActivity = buttonActivity => {
+  return {
+    type: appActions.BUTTON_ACTIVITY,
+    payload: buttonActivity
+  };
+};

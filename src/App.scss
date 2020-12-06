@@ -76,11 +76,10 @@ body {
 .sdb-status-messages {
   display: flex;
   justify-content: flex-end;
-
   width: 100%;
   height: auto;
   font-size: 4.5vh;
-  padding: 3%;
+  padding: 1% 3% 0 1%;
 }
 
 .sdb-status-messages p {

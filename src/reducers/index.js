@@ -42,10 +42,18 @@ const messageReducer = (message = null, action) => {
   return message;
 };
 
+const buttonActivityReducer = (buttonActivity = null, action) => {
+  if (action.type === appActions.BUTTON_ACTIVITY) {
+    return action.payload;
+  }
+  return buttonActivity;
+};
+
 export default combineReducers({
   status: statusReducer,
   message: messageReducer,
   serialNumber: serialNumberReducer,
   passcode: passcodeReducer,
-  inputPasscode: inputPasscodeReducer
+  inputPasscode: inputPasscodeReducer,
+  buttonActivity: buttonActivityReducer
 });
