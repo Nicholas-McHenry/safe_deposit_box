@@ -50,7 +50,6 @@ class Screen extends React.Component {
     }
 
     if (prevState.backlight === "on" && this.state.backlight === "off") {
-      console.log("Clear the input");
       dispatch(inputPasscode(null));
     }
   }
@@ -58,7 +57,6 @@ class Screen extends React.Component {
   render() {
     const { status, message } = this.props;
     const { backlight } = this.state;
-    console.log("Entered passcode:", this.props.enteredPasscode);
 
     return (
       <div className={`sdb-screen backlight-${backlight}`}>
