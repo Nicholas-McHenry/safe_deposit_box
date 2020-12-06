@@ -11,7 +11,6 @@ function* validateSerialNumber(action) {
   try {
     const response = yield call(Apis.validateSerialNumber, action.payload);
 
-    console.log("response:", response);
     if (response.sn === action.serialNumber) {
       yield put(changeStatus(statusValues.UNLOCKED));
     }
