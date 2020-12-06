@@ -1,5 +1,9 @@
 {
   "name": "safe_deposit_box",
+<<<<<<< Updated upstream
+=======
+  "homepage": "https://nicholas-mchenry.github.io/safe_deposit_box/",
+>>>>>>> Stashed changes
   "version": "0.1.0",
   "private": true,
   "dependencies": {
