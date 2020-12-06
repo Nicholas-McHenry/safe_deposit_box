@@ -1,20 +1,35 @@
 {
   "files": {
+<<<<<<< Updated upstream
     "main.css": "/safe_deposit_box/static/css/main.1ee2d72e.chunk.css",
     "main.js": "/safe_deposit_box/static/js/main.72438303.chunk.js",
     "main.js.map": "/safe_deposit_box/static/js/main.72438303.chunk.js.map",
+=======
+    "main.css": "/safe_deposit_box/static/css/main.80721a9c.chunk.css",
+    "main.js": "/safe_deposit_box/static/js/main.5cb8efc0.chunk.js",
+    "main.js.map": "/safe_deposit_box/static/js/main.5cb8efc0.chunk.js.map",
+>>>>>>> Stashed changes
     "runtime-main.js": "/safe_deposit_box/static/js/runtime-main.e953d09c.js",
     "runtime-main.js.map": "/safe_deposit_box/static/js/runtime-main.e953d09c.js.map",
     "static/js/2.f2294b0e.chunk.js": "/safe_deposit_box/static/js/2.f2294b0e.chunk.js",
     "static/js/2.f2294b0e.chunk.js.map": "/safe_deposit_box/static/js/2.f2294b0e.chunk.js.map",
     "index.html": "/safe_deposit_box/index.html",
+<<<<<<< Updated upstream
     "static/css/main.1ee2d72e.chunk.css.map": "/safe_deposit_box/static/css/main.1ee2d72e.chunk.css.map",
+=======
+    "static/css/main.80721a9c.chunk.css.map": "/safe_deposit_box/static/css/main.80721a9c.chunk.css.map",
+>>>>>>> Stashed changes
     "static/js/2.f2294b0e.chunk.js.LICENSE.txt": "/safe_deposit_box/static/js/2.f2294b0e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e953d09c.js",
     "static/js/2.f2294b0e.chunk.js",
+<<<<<<< Updated upstream
     "static/css/main.1ee2d72e.chunk.css",
     "static/js/main.72438303.chunk.js"
+=======
+    "static/css/main.80721a9c.chunk.css",
+    "static/js/main.5cb8efc0.chunk.js"
+>>>>>>> Stashed changes
   ]
 }
